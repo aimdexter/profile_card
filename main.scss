@@ -1,0 +1,118 @@
+$mobile:375px;
+$desktop:1440px;
+$Dark-cyan:hsl(185, 75%, 39%);
+$dark-blue:hsl(229, 23%, 23%);
+$grayish-blue:hsl(227, 10%, 46%);
+$Dark-gray:hsl(0, 0%, 59%);
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+
+html,body{
+  overflow: hidden;
+}
+body {
+  position: relative;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.6fr 4fr 4fr 0.6fr;
+    grid-template-rows: 1fr 2.6fr 1fr;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $Dark-cyan;
+    &::before{
+      position: absolute;
+      content: url("./images/bg-pattern-top.svg");
+      top: -35rem;
+      right: 150px;
+    }
+    &::after{
+      position: absolute;
+      content: url("./images/bg-pattern-bottom.svg");
+      bottom: -35rem;
+      left: 150px;
+      z-index: -1;
+
+    }
+}
+@mixin center {
+        text-align: center;
+}
+main{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: 2.5fr 3fr 1.8fr;
+  grid-area: 2 / 2 / 3 /4;
+  @include center;
+  border-radius: 1rem;
+  background: url(./images/bg-pattern-card.svg);
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url("./images/image-victor.jpg");
+    display: inline-block;
+    top: 20%;
+    left: 35%;
+    width: 30%;
+    height: 25%;
+    border:5px solid white;
+    border-radius: 50%;
+    z-index: index 1000px;
+}
+  .info{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    grid-area: 2/1/3/4;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3em;
+    .nom{
+      font-weight: 700;
+      color: $dark-blue;
+    }
+    span{
+      font-weight: 400;
+      color: $grayish-blue;
+      margin-left: 5px;
+    }
+    .city{
+      font-weight: 400;
+      color: $grayish-blue;
+      font-size: 13px;
+      margin-top: 1em;
+    }
+
+  }  
+  .numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 7%;
+    align-items: center;
+    grid-area:  3/1/3/4;
+    background-color: white;
+    border-radius: 0rem 0rem 1rem 1rem;
+    border-top: 1px solid;
+    color: $dark-blue;
+    font-weight: 700;
+    span{
+      font-weight: 400;
+      color: $grayish-blue;
+      font-size: 10px; 
+      letter-spacing: 2px; 
+    }
+  }
+}
+footer{
+  grid-area: 4 / 1 / 5 /5;
+   @include center;
+}
