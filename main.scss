@@ -58,14 +58,14 @@ main{
     content: "";
     position: absolute;
     background-image: url("./images/image-victor.jpg");
-    display: inline-block;
-    top: 20%;
-    left: 35%;
-    width: 30%;
-    height: 25%;
-    border:5px solid white;
-    border-radius: 50%;
-    z-index: index 1000px;
+    top: 21%;
+    left: 32%;
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    overflow:hidden;
+    border: 5px solid white;
+    background-repeat: no-repeat;
 }
   .info{
     display: flex;
@@ -116,3 +116,14 @@ footer{
   grid-area: 4 / 1 / 5 /5;
    @include center;
 }
+
+@media (min-width: 374px) {
+  main{
+    &::before{
+      top: 21%;
+      left: 33%;
+    }
+  }
+    
+}
+
