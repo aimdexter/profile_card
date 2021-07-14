@@ -16,10 +16,14 @@ $Dark-gray:hsl(0, 0%, 59%);
 
 html,body{
   overflow: hidden;
+  background-color: white;
+  z-index: -2;
+
 }
 body {
   position: relative;
-    margin: 0;
+  max-width: 1440px;
+  margin:auto ;
     height: 100vh;
     display: grid;
     grid-template-columns: 0.6fr 4fr 4fr 0.6fr;
@@ -117,13 +121,94 @@ footer{
    @include center;
 }
 
-@media (min-width: 374px) {
+@media (min-width: 320px) {
+  main{
+    &::before{
+      top: 21%;
+      left: 31%;
+    }
+  }
+    
+}
+@media (min-width: 375px) {
+  body{
+    max-width: 375px;
+  }
   main{
     &::before{
       top: 21%;
       left: 33%;
     }
   }
+}
+  @media (min-width:768px) {
+    body{
+    grid-template-columns: 4fr 3fr 3fr 4fr;
+    grid-template-rows: 1fr 2.6fr 1fr;
+    max-width: 768px;
+    &::before{
+      top: -35rem;
+      right: 300px;
+    }
+    &::after{
+      bottom: -35rem;
+      left: 300px;
+      z-index: -1;   
+        }
+    }
+    main{
+      &::before{
+        top: 21%;
+        left: 35%;
+      }
+    }
     
 }
+@media (min-width: 1024px) {
+  body {
+    position: relative;
+    max-width: 1024px;
+    &::before{
+      top: -38rem;
+      right: 480px;
+    }
+    &::after{
+      bottom: -38rem;
+      left: 480px;
+      z-index: -1;
+    }
+  }  
+  main{
+    &::before{
+      top: 21%;
+      left: 38%;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    grid-template-columns: 4fr 1.5fr 1.5fr 4fr;
+    grid-template-rows: 1.3fr 2.6fr 1.3fr;
+    max-width: 1440px;
+      &::before{
+        top: -35rem;
+        right: 700px;
+      }
+      &::after{
+        bottom: -35rem;
+        left: 700px;
+        z-index: -1;
+      }
+  }
+  main{
+    &::before{
+      top: 21%;
+      left: 36%;
+    }
+  }
+    
+}
+
+
+
 
