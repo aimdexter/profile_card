@@ -24,10 +24,10 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 - Mobile :
-![](./sc-sh-mobile.jpg)
+![](./images/sc-sh-mobile.jpg)
 
 - Desktop :
-![](./sc-sh-Desktop.jpg)
+![](./images/sc-sh-Desktop.jpg)
 
 ### Links
 
@@ -46,15 +46,15 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Useful resources
 
-- [Popular Screen Resolutions: Designing for All](https://mediag.com/blog/popular-screen-resolutions-designing-for-all/) 
+- [Popular Screen Resolutions: Designing for All](https://mediag.com/blog/popular-screen-resolutions-designing-for-all/). 
 
 - [Dimensions](https://chrome.google.com/webstore/detail/dimensions/baocaagndhipibgklemoalmkljaimfdj?hl=en) - This is a tool for to measure screen dimensions.
 
-- [Designer Tools](https://chrome.google.com/webstore/detail/designer-tools/jiiidpmjdakhbgkbdchmhmnfbdebfnhp?hl=en) - This extension adds rulers and guidelines to your browser. .
+- [Designer Tools](https://chrome.google.com/webstore/detail/designer-tools/jiiidpmjdakhbgkbdchmhmnfbdebfnhp?hl=en) - This extension adds rulers and guidelines to your browser.
 
 ## Author
 
-- GIthub - [aimdexter(https://github.com/aimdexter)
+- GIthub - [aimdexter](https://github.com/aimdexter)
 - Frontend Mentor - [@aimdexter](https://www.frontendmentor.io/profile/aimdexter)
 
 ## Acknowledgments
